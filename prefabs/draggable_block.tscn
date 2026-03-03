@@ -138,6 +138,7 @@ horizontal_alignment = 2
 vertical_alignment = 1
 
 [node name="config_panel" type="Control" parent="." unique_id=1462477993]
+z_index = 405
 anchors_preset = 0
 offset_top = 40.0
 offset_right = 160.0

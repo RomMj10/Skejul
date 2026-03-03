@@ -24,10 +24,10 @@ func _on_option_item_selected(index: int) -> void:
 func _on_panel_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		dragged = event.pressed
-		drag_offset = (get_window().get_mouse_position() - global_position)
+		drag_offset = (get_global_mouse_position() - global_position)
 	if event is InputEventMouseMotion:
 		if dragged:
-			self.position = get_window().get_mouse_position()
+			self.position = get_global_mouse_position()
 
 func _physics_process(delta: float) -> void:
 	if bg_panel.modulate != Global.color_group[group_panel.selected]:
@@ -40,9 +40,12 @@ func _physics_process(delta: float) -> void:
 
 func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
+		if Input.is_action_pressed("ui_accept"):
+			dragged = false
+			return
 		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) && !editing:
 			dragged = event.pressed
-			drag_offset = (get_window().get_mouse_position() - global_position)
+			drag_offset = (get_global_mouse_position() - global_position)
 		elif Input.is_mouse_button_pressed(MOUSE_BUTTON_RIGHT):
 			dragged = false
 			if !editing:

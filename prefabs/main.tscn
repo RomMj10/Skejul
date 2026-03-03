@@ -20,19 +20,12 @@ fill = 1
 fill_from = Vector2(0.9465996, 0.95667505)
 fill_to = Vector2(0, 0)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jflnv"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_kfaqx"]
-font = ExtResource("7_1dwcq")
-font_size = 21
-font_color = Color(0, 0, 0, 1)
-
 [sub_resource type="Animation" id="Animation_b26oi"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("actionbar/Panel:position")
+tracks/0/path = NodePath("overlay/actionbar/Panel:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -44,7 +37,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("actionbar/Panel:rotation")
+tracks/1/path = NodePath("overlay/actionbar/Panel:rotation")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -56,7 +49,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("actionbar/Panel:size")
+tracks/2/path = NodePath("overlay/actionbar/Panel:size")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -68,7 +61,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("actionbar/Panel/Button:visible")
+tracks/3/path = NodePath("overlay/actionbar/Panel/Button:visible")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -80,7 +73,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("actionbar/Panel/Button2:visible")
+tracks/4/path = NodePath("overlay/actionbar/Panel/Button2:visible")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -92,7 +85,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("actionbar/Panel/Button:position")
+tracks/5/path = NodePath("overlay/actionbar/Panel/Button:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -104,7 +97,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("actionbar/Panel/Button:rotation")
+tracks/6/path = NodePath("overlay/actionbar/Panel/Button:rotation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -116,7 +109,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("actionbar/Panel/Button:size")
+tracks/7/path = NodePath("overlay/actionbar/Panel/Button:size")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -128,7 +121,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("actionbar/Panel/Button2:position")
+tracks/8/path = NodePath("overlay/actionbar/Panel/Button2:position")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -140,7 +133,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("actionbar/Panel/Button2:rotation")
+tracks/9/path = NodePath("overlay/actionbar/Panel/Button2:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -152,7 +145,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("actionbar/Panel/Button2:size")
+tracks/10/path = NodePath("overlay/actionbar/Panel/Button2:size")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -164,7 +157,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("actionbar/Panel/Button:modulate")
+tracks/11/path = NodePath("overlay/actionbar/Panel/Button:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -176,7 +169,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("actionbar/Panel/Button2:modulate")
+tracks/12/path = NodePath("overlay/actionbar/Panel/Button2:modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -188,7 +181,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("header/menu_btn:visible")
+tracks/13/path = NodePath("overlay/header/menu_btn:visible")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -200,7 +193,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("actionbar/Panel:visible")
+tracks/14/path = NodePath("overlay/actionbar/Panel:visible")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -212,7 +205,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("header/LineEdit:position")
+tracks/15/path = NodePath("overlay/header/LineEdit:position")
 tracks/15/interp = 1
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -224,7 +217,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("header/LineEdit:rotation")
+tracks/16/path = NodePath("overlay/header/LineEdit:rotation")
 tracks/16/interp = 1
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -239,7 +232,7 @@ resource_name = "anim_action_up"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("actionbar/Panel:position")
+tracks/0/path = NodePath("overlay/actionbar/Panel:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -251,7 +244,7 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("actionbar/Panel:rotation")
+tracks/1/path = NodePath("overlay/actionbar/Panel:rotation")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
@@ -263,7 +256,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("actionbar/Panel:size")
+tracks/2/path = NodePath("overlay/actionbar/Panel:size")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -275,7 +268,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("actionbar/Panel/Button:visible")
+tracks/3/path = NodePath("overlay/actionbar/Panel/Button:visible")
 tracks/3/interp = 2
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -287,7 +280,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("actionbar/Panel/Button2:visible")
+tracks/4/path = NodePath("overlay/actionbar/Panel/Button2:visible")
 tracks/4/interp = 2
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -299,7 +292,7 @@ tracks/4/keys = {
 tracks/5/type = "value"
 tracks/5/imported = false
 tracks/5/enabled = true
-tracks/5/path = NodePath("actionbar/Panel/Button:position")
+tracks/5/path = NodePath("overlay/actionbar/Panel/Button:position")
 tracks/5/interp = 2
 tracks/5/loop_wrap = true
 tracks/5/keys = {
@@ -311,7 +304,7 @@ tracks/5/keys = {
 tracks/6/type = "value"
 tracks/6/imported = false
 tracks/6/enabled = true
-tracks/6/path = NodePath("actionbar/Panel/Button:rotation")
+tracks/6/path = NodePath("overlay/actionbar/Panel/Button:rotation")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
@@ -323,7 +316,7 @@ tracks/6/keys = {
 tracks/7/type = "value"
 tracks/7/imported = false
 tracks/7/enabled = true
-tracks/7/path = NodePath("actionbar/Panel/Button:size")
+tracks/7/path = NodePath("overlay/actionbar/Panel/Button:size")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
@@ -335,7 +328,7 @@ tracks/7/keys = {
 tracks/8/type = "value"
 tracks/8/imported = false
 tracks/8/enabled = true
-tracks/8/path = NodePath("actionbar/Panel/Button2:position")
+tracks/8/path = NodePath("overlay/actionbar/Panel/Button2:position")
 tracks/8/interp = 2
 tracks/8/loop_wrap = true
 tracks/8/keys = {
@@ -347,7 +340,7 @@ tracks/8/keys = {
 tracks/9/type = "value"
 tracks/9/imported = false
 tracks/9/enabled = true
-tracks/9/path = NodePath("actionbar/Panel/Button2:rotation")
+tracks/9/path = NodePath("overlay/actionbar/Panel/Button2:rotation")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
@@ -359,7 +352,7 @@ tracks/9/keys = {
 tracks/10/type = "value"
 tracks/10/imported = false
 tracks/10/enabled = true
-tracks/10/path = NodePath("actionbar/Panel/Button2:size")
+tracks/10/path = NodePath("overlay/actionbar/Panel/Button2:size")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
@@ -371,7 +364,7 @@ tracks/10/keys = {
 tracks/11/type = "value"
 tracks/11/imported = false
 tracks/11/enabled = true
-tracks/11/path = NodePath("actionbar/Panel/Button:modulate")
+tracks/11/path = NodePath("overlay/actionbar/Panel/Button:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
@@ -383,7 +376,7 @@ tracks/11/keys = {
 tracks/12/type = "value"
 tracks/12/imported = false
 tracks/12/enabled = true
-tracks/12/path = NodePath("actionbar/Panel/Button2:modulate")
+tracks/12/path = NodePath("overlay/actionbar/Panel/Button2:modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
@@ -395,7 +388,7 @@ tracks/12/keys = {
 tracks/13/type = "value"
 tracks/13/imported = false
 tracks/13/enabled = true
-tracks/13/path = NodePath("header/menu_btn:visible")
+tracks/13/path = NodePath("overlay/header/menu_btn:visible")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
@@ -407,7 +400,7 @@ tracks/13/keys = {
 tracks/14/type = "value"
 tracks/14/imported = false
 tracks/14/enabled = true
-tracks/14/path = NodePath("actionbar/Panel:visible")
+tracks/14/path = NodePath("overlay/actionbar/Panel:visible")
 tracks/14/interp = 1
 tracks/14/loop_wrap = true
 tracks/14/keys = {
@@ -419,7 +412,7 @@ tracks/14/keys = {
 tracks/15/type = "value"
 tracks/15/imported = false
 tracks/15/enabled = true
-tracks/15/path = NodePath("header/LineEdit:position")
+tracks/15/path = NodePath("overlay/header/LineEdit:position")
 tracks/15/interp = 2
 tracks/15/loop_wrap = true
 tracks/15/keys = {
@@ -431,7 +424,7 @@ tracks/15/keys = {
 tracks/16/type = "value"
 tracks/16/imported = false
 tracks/16/enabled = true
-tracks/16/path = NodePath("header/LineEdit:rotation")
+tracks/16/path = NodePath("overlay/header/LineEdit:rotation")
 tracks/16/interp = 4
 tracks/16/loop_wrap = true
 tracks/16/keys = {
@@ -447,6 +440,13 @@ _data = {
 &"anim_action_up": SubResource("Animation_c70ge")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_kfaqx"]
+font = ExtResource("7_1dwcq")
+font_size = 21
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jflnv"]
+
 [node name="main" type="Control" unique_id=1340826740]
 layout_mode = 3
 anchors_preset = 15
@@ -457,104 +457,29 @@ grow_vertical = 2
 script = ExtResource("1_4sl7s")
 
 [node name="bg" type="TextureRect" parent="." unique_id=202895800]
+z_as_relative = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -256.0
-offset_top = -256.0
-offset_right = 192.0
+offset_left = -1144.0
+offset_top = -816.0
 offset_bottom = 184.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture2D_wmafp")
 stretch_mode = 1
 
-[node name="actionbar" parent="." unique_id=482608946 instance=ExtResource("5_b26oi")]
-layout_mode = 1
+[node name="anim" type="AnimationPlayer" parent="." unique_id=421567078]
+libraries/ = SubResource("AnimationLibrary_1dwcq")
 
-[node name="Panel" parent="actionbar" index="0" unique_id=1677112941]
-visible = false
-offset_left = 48.0
-offset_top = 16.0
-offset_right = 208.0
+[node name="cam" type="Camera2D" parent="." unique_id=412287431]
 
-[node name="Button" parent="actionbar/Panel" index="0" unique_id=54635761]
-visible = false
-modulate = Color(1, 1, 1, 0)
-offset_left = 8.0
-offset_top = -32.050465
-offset_right = 64.0
-offset_bottom = 23.94954
-mouse_default_cursor_shape = 2
-theme_override_styles/pressed = ExtResource("5_kfaqx")
+[node name="overlay" type="CanvasLayer" parent="." unique_id=1784461453]
 
-[node name="Button2" parent="actionbar/Panel" index="1" unique_id=1907973121]
-visible = false
-modulate = Color(1, 1, 1, 0)
-offset_left = 8.0
-offset_top = -32.05046
-offset_right = 64.0
-offset_bottom = 23.94954
-mouse_default_cursor_shape = 2
-theme_override_styles/pressed = ExtResource("5_kfaqx")
-theme_override_styles/hover = ExtResource("5_kfaqx")
-theme_override_styles/hover_pressed = ExtResource("5_kfaqx")
-
-[node name="header" type="Control" parent="." unique_id=95029662]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_bottom = 88.0
-grow_horizontal = 2
-mouse_filter = 2
-
-[node name="LineEdit" type="LineEdit" parent="header" unique_id=621002700]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 128.0
-offset_top = 32.0
-offset_right = -95.99841
-offset_bottom = 72.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.16095495, 0.13954401, 0.13954401, 1)
-theme_override_colors/font_placeholder_color = Color(0.15319651, 0.13638334, 0.13638334, 0.6)
-theme_override_colors/caret_color = Color(0.24629813, 0.19251461, 0.19251461, 1)
-theme_override_constants/caret_width = 4
-theme_override_fonts/font = ExtResource("3_jflnv")
-theme_override_font_sizes/font_size = 35
-theme_override_styles/focus = SubResource("StyleBoxEmpty_jflnv")
-placeholder_text = "Placeholder"
-flat = true
-
-[node name="menu_btn" type="TextureButton" parent="header" unique_id=541727965]
-layout_mode = 0
-offset_left = 40.0
-offset_top = 16.0
-offset_right = 112.0
-offset_bottom = 88.0
-mouse_default_cursor_shape = 2
-texture_normal = ExtResource("1_jflnv")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureRect" type="TextureRect" parent="header/menu_btn" unique_id=821635655]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = -16.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_4sl7s")
-expand_mode = 1
-
-[node name="footer" type="Control" parent="." unique_id=289011102]
-layout_mode = 1
+[node name="footer" type="Control" parent="overlay" unique_id=289011102]
+z_index = 89
+layout_mode = 3
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -563,7 +488,7 @@ offset_top = -40.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="ColorRect" type="ColorPickerButton" parent="footer" unique_id=514904831]
+[node name="ColorRect" type="ColorPickerButton" parent="overlay/footer" unique_id=514904831]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -580,7 +505,7 @@ flat = true
 color = Color(0.39215687, 0.49411765, 0.90588236, 1)
 edit_alpha = false
 
-[node name="ColorRect2" type="ColorPickerButton" parent="footer" unique_id=320809071]
+[node name="ColorRect2" type="ColorPickerButton" parent="overlay/footer" unique_id=320809071]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -597,7 +522,7 @@ flat = true
 color = Color(0.92128485, 0.3525093, 0.34842262, 1)
 edit_alpha = false
 
-[node name="ColorRect3" type="ColorPickerButton" parent="footer" unique_id=970392917]
+[node name="ColorRect3" type="ColorPickerButton" parent="overlay/footer" unique_id=970392917]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -614,7 +539,7 @@ flat = true
 color = Color(1, 0.7137255, 0.21568628, 1)
 edit_alpha = false
 
-[node name="barcode" type="Label" parent="footer" unique_id=1328298515]
+[node name="barcode" type="Label" parent="overlay/footer" unique_id=1328298515]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
@@ -629,16 +554,96 @@ vertical_alignment = 1
 clip_text = true
 text_overrun_behavior = 1
 
-[node name="anim" type="AnimationPlayer" parent="." unique_id=421567078]
-libraries/ = SubResource("AnimationLibrary_1dwcq")
+[node name="actionbar" parent="overlay" unique_id=482608946 instance=ExtResource("5_b26oi")]
+z_index = 65
+mouse_filter = 2
 
-[connection signal="gui_input" from="actionbar" to="." method="_on_actionbar_gui_input"]
-[connection signal="pressed" from="actionbar/Panel/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="actionbar/Panel/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="text_changed" from="header/LineEdit" to="." method="_on_line_edit_text_changed"]
-[connection signal="button_up" from="header/menu_btn" to="." method="_on_menu_btn_button_up"]
-[connection signal="color_changed" from="footer/ColorRect" to="." method="_on_color_rect_color_changed"]
-[connection signal="color_changed" from="footer/ColorRect2" to="." method="_on_color_rect_2_color_changed"]
-[connection signal="color_changed" from="footer/ColorRect3" to="." method="_on_color_rect_3_color_changed"]
+[node name="Panel" parent="overlay/actionbar" index="0" unique_id=1677112941]
+visible = false
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 208.0
 
-[editable path="actionbar"]
+[node name="Button" parent="overlay/actionbar/Panel" index="0" unique_id=54635761]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_left = 8.0
+offset_top = -32.050465
+offset_right = 64.0
+offset_bottom = 23.94954
+mouse_default_cursor_shape = 2
+theme_override_styles/pressed = ExtResource("5_kfaqx")
+
+[node name="Button2" parent="overlay/actionbar/Panel" index="1" unique_id=1907973121]
+visible = false
+modulate = Color(1, 1, 1, 0)
+offset_left = 8.0
+offset_top = -32.05046
+offset_right = 64.0
+offset_bottom = 23.94954
+mouse_default_cursor_shape = 2
+theme_override_styles/pressed = ExtResource("5_kfaqx")
+theme_override_styles/hover = ExtResource("5_kfaqx")
+theme_override_styles/hover_pressed = ExtResource("5_kfaqx")
+
+[node name="header" type="Control" parent="overlay" unique_id=95029662]
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 88.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="LineEdit" type="LineEdit" parent="overlay/header" unique_id=621002700]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 128.0
+offset_top = 32.0
+offset_right = -96.0
+offset_bottom = 72.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.16095495, 0.13954401, 0.13954401, 1)
+theme_override_colors/font_placeholder_color = Color(0.15319651, 0.13638334, 0.13638334, 0.6)
+theme_override_colors/caret_color = Color(0.24629813, 0.19251461, 0.19251461, 1)
+theme_override_constants/caret_width = 4
+theme_override_fonts/font = ExtResource("3_jflnv")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jflnv")
+placeholder_text = "Placeholder"
+flat = true
+
+[node name="menu_btn" type="TextureButton" parent="overlay/header" unique_id=541727965]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 16.0
+offset_right = 112.0
+offset_bottom = 88.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("1_jflnv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="overlay/header/menu_btn" unique_id=821635655]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4sl7s")
+expand_mode = 1
+
+[connection signal="color_changed" from="overlay/footer/ColorRect" to="." method="_on_color_rect_color_changed"]
+[connection signal="color_changed" from="overlay/footer/ColorRect2" to="." method="_on_color_rect_2_color_changed"]
+[connection signal="color_changed" from="overlay/footer/ColorRect3" to="." method="_on_color_rect_3_color_changed"]
+[connection signal="pressed" from="overlay/actionbar/Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="overlay/actionbar/Panel/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="text_changed" from="overlay/header/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="button_up" from="overlay/header/menu_btn" to="." method="_on_menu_btn_button_up"]
+
+[editable path="overlay/actionbar"]

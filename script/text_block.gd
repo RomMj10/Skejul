@@ -59,7 +59,7 @@ func _on_line_edit_gui_input(event: InputEvent) -> void:
 			lineEdit.mouse_default_cursor_shape = Control.CURSOR_DRAG
 			lineEdit.selecting_enabled = false
 			if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-				drag_offset = (get_window().get_mouse_position() - global_position)
+				drag_offset = (get_global_mouse_position() - global_position)
 			
 		else:
 			lineEdit.mouse_default_cursor_shape = Control.CURSOR_IBEAM
