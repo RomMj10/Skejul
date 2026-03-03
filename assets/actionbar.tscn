@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://bfuws85lw1e2g"]
+
+[ext_resource type="StyleBox" uid="uid://ccsa6apy0grij" path="res://assets/button_accent2.tres" id="1_tbs2v"]
+[ext_resource type="Texture2D" uid="uid://conbjs6lo51p4" path="res://assets/add.png" id="2_ethhl"]
+[ext_resource type="StyleBox" uid="uid://djhh4o4rdrq7y" path="res://assets/button_accent2_hover.tres" id="2_mi7tt"]
+[ext_resource type="Texture2D" uid="uid://b8ndtk0a3ivso" path="res://assets/text.png" id="4_ethhl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcpgn"]
+bg_color = Color(0.12992108, 0.10155053, 0.10155053, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="actionbar" type="Control" unique_id=482608946]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=1677112941]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 24.0
+offset_right = 184.0
+offset_bottom = 96.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xcpgn")
+
+[node name="Button" type="Button" parent="Panel" unique_id=54635761]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = -28.0
+offset_right = 72.0
+offset_bottom = 28.0
+grow_vertical = 2
+theme_override_styles/normal = ExtResource("1_tbs2v")
+theme_override_styles/pressed = ExtResource("1_tbs2v")
+theme_override_styles/hover = ExtResource("2_mi7tt")
+theme_override_styles/hover_pressed = ExtResource("2_mi7tt")
+icon_alignment = 1
+expand_icon = true
+
+[node name="rect" type="TextureRect" parent="Panel/Button" unique_id=972466047]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ethhl")
+expand_mode = 1
+
+[node name="Button2" type="Button" parent="Panel" unique_id=1907973121]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 80.0
+offset_top = -28.0
+offset_right = 136.0
+offset_bottom = 28.0
+grow_vertical = 2
+theme_override_styles/normal = ExtResource("1_tbs2v")
+
+[node name="rect" type="TextureRect" parent="Panel/Button2" unique_id=673285524]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_ethhl")
+expand_mode = 1

@@ -1,0 +1,208 @@
+[gd_scene format=3 uid="uid://do2h4cg2e3sk0"]
+
+[ext_resource type="Script" uid="uid://jw0hfs7osyqr" path="res://script/draggable_block.gd" id="1_2jdg8"]
+[ext_resource type="StyleBox" uid="uid://ccsa6apy0grij" path="res://assets/button_accent2.tres" id="2_gswph"]
+[ext_resource type="StyleBox" uid="uid://djhh4o4rdrq7y" path="res://assets/button_accent2_hover.tres" id="3_lh1ss"]
+[ext_resource type="FontFile" uid="uid://bqjuxf4veq7fa" path="res://assets/NType82-Regular.otf" id="3_s2x7o"]
+[ext_resource type="Texture2D" uid="uid://00twa0i7a4fv" path="res://assets/close.png" id="4_s2x7o"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bb7fn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2jdg8"]
+bg_color = Color(0.14543802, 0.13179554, 0.12044933, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_lh1ss"]
+font = ExtResource("3_s2x7o")
+font_size = 24
+
+[sub_resource type="LabelSettings" id="LabelSettings_s2x7o"]
+font = ExtResource("3_s2x7o")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xb1q2"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.049000002, 0.049000002, 0.28235295)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_q1dj4"]
+font = ExtResource("3_s2x7o")
+font_size = 13
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gswph"]
+bg_color = Color(0.09, 0.0693, 0.0693, 0.78431374)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.9445602, 0.7254138, 0.3352402, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="draggable_block" type="Control" unique_id=423360596]
+custom_minimum_size = Vector2(160, 132)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 160.0
+offset_bottom = 192.0
+script = ExtResource("1_2jdg8")
+metadata/color_group = 0
+
+[node name="panel" type="Panel" parent="." unique_id=32020840]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bb7fn")
+
+[node name="vbox" type="VBoxContainer" parent="." unique_id=1993595916]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_right = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="vbox" unique_id=1910539794]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="icon" type="TextureRect" parent="vbox/Control" unique_id=1666689701]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 32.0
+offset_bottom = 32.0
+mouse_default_cursor_shape = 2
+texture = ExtResource("4_s2x7o")
+expand_mode = 1
+
+[node name="option" type="OptionButton" parent="vbox/Control" unique_id=830326001]
+layout_mode = 0
+offset_left = 8.0
+offset_top = -32.0
+offset_right = 141.0
+offset_bottom = -1.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_2jdg8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2jdg8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2jdg8")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_2jdg8")
+selected = 1
+item_count = 3
+popup/item_0/text = "Synchronous"
+popup/item_0/id = 0
+popup/item_1/text = "Async"
+popup/item_1/id = 1
+popup/item_2/text = "FaceToFace"
+popup/item_2/id = 2
+
+[node name="time_lbl" type="Label" parent="vbox" unique_id=705225212]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_lh1ss")
+autowrap_mode = 1
+
+[node name="course_lbl" type="Label" parent="vbox" unique_id=859350409]
+layout_mode = 2
+label_settings = SubResource("LabelSettings_s2x7o")
+autowrap_mode = 1
+
+[node name="room_lbl" type="Label" parent="." unique_id=1134434082]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 168.0
+offset_right = 25.0
+offset_bottom = 189.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_xb1q2")
+label_settings = SubResource("LabelSettings_q1dj4")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="config_panel" type="Control" parent="." unique_id=1462477993]
+anchors_preset = 0
+offset_top = 40.0
+offset_right = 160.0
+offset_bottom = 176.0
+
+[node name="Panel" type="Panel" parent="config_panel" unique_id=1247726941]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gswph")
+
+[node name="remove_btn" type="Button" parent="config_panel/Panel" unique_id=1084632373]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 136.0
+offset_right = 152.0
+offset_bottom = 168.0
+theme_override_styles/normal = ExtResource("2_gswph")
+theme_override_styles/pressed = ExtResource("3_lh1ss")
+theme_override_styles/hover = ExtResource("3_lh1ss")
+icon = ExtResource("4_s2x7o")
+expand_icon = true
+
+[node name="LineEdit_time" type="LineEdit" parent="config_panel/Panel" unique_id=31031337]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("3_s2x7o")
+placeholder_text = "Time"
+alignment = 1
+caret_blink = true
+
+[node name="LineEdit_course" type="LineEdit" parent="config_panel/Panel" unique_id=1049887246]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 152.0
+offset_bottom = 80.0
+theme_override_fonts/font = ExtResource("3_s2x7o")
+placeholder_text = "Course"
+alignment = 1
+caret_blink = true
+
+[node name="LineEdit_room" type="LineEdit" parent="config_panel/Panel" unique_id=592660029]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 136.0
+offset_right = 104.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("3_s2x7o")
+placeholder_text = "Room"
+caret_blink = true
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="gui_input" from="panel" to="." method="_on_panel_gui_input"]
+[connection signal="gui_input" from="vbox/Control/icon" to="." method="_on_icon_gui_input"]
+[connection signal="item_selected" from="vbox/Control/option" to="." method="_on_option_item_selected"]
+[connection signal="pressed" from="config_panel/Panel/remove_btn" to="." method="_on_remove_btn_pressed"]
+[connection signal="text_changed" from="config_panel/Panel/LineEdit_time" to="." method="_on_line_edit_time_text_changed"]
+[connection signal="text_changed" from="config_panel/Panel/LineEdit_course" to="." method="_on_line_edit_course_text_changed"]
+[connection signal="text_changed" from="config_panel/Panel/LineEdit_room" to="." method="_on_line_edit_room_text_changed"]
