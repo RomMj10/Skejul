@@ -6,12 +6,11 @@ Skejul is a modular scheduling application that allows user to create diagrams o
 
 ## Features
 
-- **Modular Design**: Create schedules with interchangeable components and features
 - **Save/Load System**: Persist schedules using the custom .essen file format
 - **Screenshot Capture**: Export visual representations of your schedules
 - **Draggable Blocks**: Easily rearrange schedule elements
 - **Text Editing**: Add and modify text within schedule blocks
-- **Customizable Interface**: Tailor the scheduling experience to your needs
+- **Customizable Interface**: Tailor the scheduling experience to your needs (still limited)
 
 ## Getting Started
 
