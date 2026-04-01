@@ -16,6 +16,7 @@ func _ready() -> void:
 	group_panel.hide()
 	config_panel.hide()
 	bg_panel.modulate = Global.color_group[group_panel.selected]
+	icon.modulate = get_contrast_color(bg_panel.modulate)
 
 func _on_option_item_selected(index: int) -> void:
 	group = index
@@ -34,6 +35,7 @@ func _physics_process(delta: float) -> void:
 		bg_panel.modulate = Global.color_group[group_panel.selected]
 		time_lbl.modulate = get_contrast_color(bg_panel.modulate)
 		course_lbl.modulate = get_contrast_color(bg_panel.modulate)
+		icon.modulate = get_contrast_color(bg_panel.modulate)
 		course_lbl.modulate.a =0.75
 		room_lbl.modulate = get_contrast_color(bg_panel.modulate)
 		icon.texture = load(Global.icon_group[group_panel.selected])
@@ -81,13 +83,14 @@ func get_contrast_color(bg: Color) -> Color:
 func _on_remove_btn_pressed() -> void:
 	queue_free()
 
-
 func _on_line_edit_time_text_changed(new_text: String) -> void:
 	time_lbl.text = new_text
+	if new_text.length() > 11:
+		time_lbl.label_settings.set("font_size", 20)
+		print("label")
 
 func _on_line_edit_course_text_changed(new_text: String) -> void:
 	course_lbl.text = new_text
-
 
 func _on_line_edit_room_text_changed(new_text: String) -> void:
 	room_lbl.text = new_text

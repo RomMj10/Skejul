@@ -10,14 +10,15 @@
 
 [sub_resource type="Gradient" id="Gradient_o5gy4"]
 interpolation_mode = 2
-offsets = PackedFloat32Array(0.016838571, 0.044329982)
+offsets = PackedFloat32Array(0.031225393, 0.044329982)
+colors = PackedColorArray(0.31612432, 0.31612432, 0.31612432, 1, 1, 1, 1, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_wmafp"]
 gradient = SubResource("Gradient_o5gy4")
 width = 32
 height = 32
 fill = 1
-fill_from = Vector2(0.9465996, 0.95667505)
+fill_from = Vector2(0.9768263, 0.9717884)
 fill_to = Vector2(0, 0)
 
 [sub_resource type="Animation" id="Animation_b26oi"]
@@ -226,6 +227,78 @@ tracks/16/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("overlay/actionbar/Panel/Button3:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(152, 8)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("overlay/actionbar/Panel/Button4:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(232, 8)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("overlay/actionbar/Panel/Button3:modulate")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("overlay/actionbar/Panel/Button4:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("overlay/actionbar/Panel/Button5:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(304, 8)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("overlay/actionbar/Panel/Button5:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_c70ge"]
 resource_name = "anim_action_up"
@@ -236,10 +309,10 @@ tracks/0/path = NodePath("overlay/actionbar/Panel:position")
 tracks/0/interp = 2
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.09999109, 0.25, 0.43333334),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.09999109, 0.25, 0.43333334, 0.45, 0.4666667, 0.6666667, 0.70000005),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(48, 24), Vector2(48, 23.946472), Vector2(48, 20.298925), Vector2(48, 16)]
+"values": [Vector2(48, 24), Vector2(48, 23.946472), Vector2(48, 20.298925), Vector2(48, 16), Vector2(48, 16), Vector2(48, 16), Vector2(48, 16), Vector2(48, 16)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -248,10 +321,10 @@ tracks/1/path = NodePath("overlay/actionbar/Panel:rotation")
 tracks/1/interp = 2
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.09999109, 0.25, 0.43333334),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.09999109, 0.25, 0.43333334, 0.45, 0.4666667, 0.6666667, 0.70000005),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 0.0, 0.0, 0.0]
+"values": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -260,10 +333,10 @@ tracks/2/path = NodePath("overlay/actionbar/Panel:size")
 tracks/2/interp = 2
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.09999109, 0.25, 0.43333334),
+"times": PackedFloat32Array(0, 0.2, 0.4666667, 0.8),
 "transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(56, 56), Vector2(88, 88.05353), Vector2(132.049, 75.70107), Vector2(160, 72)]
+"values": [Vector2(56, 56), Vector2(160, 72), Vector2(352, 72), Vector2(376, 72)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -368,7 +441,7 @@ tracks/11/path = NodePath("overlay/actionbar/Panel/Button:modulate")
 tracks/11/interp = 1
 tracks/11/loop_wrap = true
 tracks/11/keys = {
-"times": PackedFloat32Array(0, 0.06, 0.32),
+"times": PackedFloat32Array(0, 0.06, 0.2),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -380,7 +453,7 @@ tracks/12/path = NodePath("overlay/actionbar/Panel/Button2:modulate")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(0, 0.07, 0.31),
+"times": PackedFloat32Array(0, 0.07, 0.26666668),
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
@@ -416,10 +489,10 @@ tracks/15/path = NodePath("overlay/header/LineEdit:position")
 tracks/15/interp = 2
 tracks/15/loop_wrap = true
 tracks/15/keys = {
-"times": PackedFloat32Array(0, 0.36666667),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.6333333),
+"transitions": PackedFloat32Array(0.36602145, 3.6050022),
 "update": 0,
-"values": [Vector2(128, 32), Vector2(224, 32)]
+"values": [Vector2(128, 32), Vector2(446.165, 32)]
 }
 tracks/16/type = "value"
 tracks/16/imported = false
@@ -428,10 +501,82 @@ tracks/16/path = NodePath("overlay/header/LineEdit:rotation")
 tracks/16/interp = 4
 tracks/16/loop_wrap = true
 tracks/16/keys = {
-"times": PackedFloat32Array(0, 0.36666667),
+"times": PackedFloat32Array(0, 0.36666667, 0.43333337),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.0]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("overlay/actionbar/Panel/Button3:position")
+tracks/17/interp = 2
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.45),
+"transitions": PackedFloat32Array(0.6830201, 1),
+"update": 0,
+"values": [Vector2(8, 12.810671), Vector2(160, 8)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("overlay/actionbar/Panel/Button4:position")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.45),
+"transitions": PackedFloat32Array(0.5946035, 1),
+"update": 0,
+"values": [Vector2(8, 9.210075), Vector2(232, 8)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("overlay/actionbar/Panel/Button3:modulate")
+tracks/19/interp = 2
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.43333334),
+"transitions": PackedFloat32Array(1.4142138, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("overlay/actionbar/Panel/Button4:modulate")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.56666666),
+"transitions": PackedFloat32Array(2.0000005, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("overlay/actionbar/Panel/Button5:position")
+tracks/21/interp = 2
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0.03333333, 0.53333336),
+"transitions": PackedFloat32Array(1.4142134, 0.5743491),
+"update": 0,
+"values": [Vector2(8, 8.0536175), Vector2(304, 8)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("overlay/actionbar/Panel/Button5:modulate")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0.13333334, 0.6666667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [0.0, 0.0]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_1dwcq"]
@@ -446,6 +591,19 @@ font_size = 21
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jflnv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1dwcq"]
+bg_color = Color(0, 0, 0, 0)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(1, 0.75686276, 0.28627452, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 5
 
 [node name="main" type="Control" unique_id=1340826740]
 layout_mode = 3
@@ -472,6 +630,7 @@ stretch_mode = 1
 
 [node name="anim" type="AnimationPlayer" parent="." unique_id=421567078]
 libraries/ = SubResource("AnimationLibrary_1dwcq")
+speed_scale = 1.7
 
 [node name="cam" type="Camera2D" parent="." unique_id=412287431]
 
@@ -547,7 +706,7 @@ anchor_bottom = 1.0
 offset_left = 288.0
 offset_right = -112.0
 offset_bottom = -7.0
-text = "Testing"
+text = "No name"
 label_settings = SubResource("LabelSettings_kfaqx")
 horizontal_alignment = 2
 vertical_alignment = 1
@@ -586,6 +745,36 @@ theme_override_styles/pressed = ExtResource("5_kfaqx")
 theme_override_styles/hover = ExtResource("5_kfaqx")
 theme_override_styles/hover_pressed = ExtResource("5_kfaqx")
 
+[node name="Button3" parent="overlay/actionbar/Panel" index="2" unique_id=2066365275]
+offset_left = 152.0
+offset_top = -32.0
+offset_right = 207.99782
+offset_bottom = 24.001907
+theme_override_styles/pressed = ExtResource("5_kfaqx")
+theme_override_styles/hover = ExtResource("5_kfaqx")
+theme_override_styles/hover_pressed = ExtResource("5_kfaqx")
+theme_override_styles/focus = ExtResource("5_kfaqx")
+
+[node name="Button4" parent="overlay/actionbar/Panel" index="3" unique_id=54328625]
+offset_left = 232.0
+offset_top = -32.0
+offset_right = 288.0
+offset_bottom = 23.998795
+theme_override_styles/pressed = ExtResource("5_kfaqx")
+theme_override_styles/hover = ExtResource("5_kfaqx")
+theme_override_styles/hover_pressed = ExtResource("5_kfaqx")
+theme_override_styles/focus = ExtResource("5_kfaqx")
+
+[node name="Button5" parent="overlay/actionbar/Panel" index="4" unique_id=2062793788]
+offset_left = 304.0
+offset_top = -32.0
+offset_right = 360.0
+offset_bottom = 23.999962
+theme_override_styles/pressed = ExtResource("5_kfaqx")
+theme_override_styles/hover = ExtResource("5_kfaqx")
+theme_override_styles/hover_pressed = ExtResource("5_kfaqx")
+theme_override_styles/focus = ExtResource("5_kfaqx")
+
 [node name="header" type="Control" parent="overlay" unique_id=95029662]
 layout_mode = 3
 anchors_preset = 10
@@ -600,7 +789,7 @@ anchors_preset = 10
 anchor_right = 1.0
 offset_left = 128.0
 offset_top = 32.0
-offset_right = -96.0
+offset_right = -353.28235
 offset_bottom = 72.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.16095495, 0.13954401, 0.13954401, 1)
@@ -638,12 +827,43 @@ grow_vertical = 2
 texture = ExtResource("2_4sl7s")
 expand_mode = 1
 
+[node name="screenshot_overlay" type="Panel" parent="overlay" unique_id=1628686915]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = 8.0
+offset_right = -16.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1dwcq")
+
+[node name="SaveDialog" type="FileDialog" parent="overlay" unique_id=261746217]
+oversampling_override = 1.0
+initial_position = 1
+access = 1
+use_native_dialog = true
+
+[node name="LoadDialog" type="FileDialog" parent="overlay" unique_id=10453540]
+oversampling_override = 1.0
+title = "Open a File"
+file_mode = 0
+use_native_dialog = true
+
 [connection signal="color_changed" from="overlay/footer/ColorRect" to="." method="_on_color_rect_color_changed"]
 [connection signal="color_changed" from="overlay/footer/ColorRect2" to="." method="_on_color_rect_2_color_changed"]
 [connection signal="color_changed" from="overlay/footer/ColorRect3" to="." method="_on_color_rect_3_color_changed"]
 [connection signal="pressed" from="overlay/actionbar/Panel/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="overlay/actionbar/Panel/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="overlay/actionbar/Panel/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="overlay/actionbar/Panel/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="overlay/actionbar/Panel/Button5" to="." method="_on_button_5_pressed"]
 [connection signal="text_changed" from="overlay/header/LineEdit" to="." method="_on_line_edit_text_changed"]
 [connection signal="button_up" from="overlay/header/menu_btn" to="." method="_on_menu_btn_button_up"]
+[connection signal="file_selected" from="overlay/SaveDialog" to="." method="_on_save_dialog_file_selected"]
+[connection signal="file_selected" from="overlay/LoadDialog" to="." method="_on_load_dialog_file_selected"]
 
 [editable path="overlay/actionbar"]

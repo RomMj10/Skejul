@@ -24,6 +24,7 @@ offset_bottom = 31.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
 theme_override_colors/caret_color = Color(0.07561183, 0.07493972, 0.07493972, 1)
+theme_override_constants/caret_width = 2
 theme_override_fonts/font = ExtResource("1_34xtv")
 theme_override_styles/normal = SubResource("StyleBoxFlat_dnsfk")
 theme_override_styles/read_only = SubResource("StyleBoxFlat_catjj")
@@ -34,6 +35,12 @@ context_menu_enabled = false
 middle_mouse_paste_enabled = false
 drag_and_drop_selection_enabled = false
 caret_column = 2
+
+[node name="Panel" type="Panel" parent="LineEdit" unique_id=436452317]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 72.0
+offset_bottom = 72.0
 
 [node name="font_color" type="ColorPickerButton" parent="LineEdit" unique_id=435866723]
 layout_mode = 0

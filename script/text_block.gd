@@ -4,6 +4,7 @@ extends Control
 @onready var lineEdit = $LineEdit
 @onready var font_color = $LineEdit/font_color
 @onready var bg_color = $LineEdit/bg_color
+@onready var panel = $LineEdit/Panel
 @onready var draggable = false
 var drag_offset = Vector2.ZERO
 
@@ -56,6 +57,7 @@ func _on_line_edit_gui_input(event: InputEvent) -> void:
 			font_color.visible = false
 			bg_color.visible = false
 			lineEdit.editable = false
+			panel.visible = false
 			lineEdit.mouse_default_cursor_shape = Control.CURSOR_DRAG
 			lineEdit.selecting_enabled = false
 			if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
@@ -67,14 +69,24 @@ func _on_line_edit_gui_input(event: InputEvent) -> void:
 			lineEdit.editable = true
 			font_color.visible = true
 			bg_color.visible = true
+			panel.visible = true
 	if event is InputEventMouseMotion && Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		if draggable:
 			var target_pos = get_global_mouse_position() - drag_offset
 			target_pos.x = round(target_pos.x / 32) * 32
 			target_pos.y = round(target_pos.y / 32) * 32
 			global_position = target_pos
+	if event is InputEventKey && lineEdit.has_focus():
+		if Input.is_action_just_pressed("duplicate"):
+			var new_text = self.duplicate()
+			self.add_sibling(new_text)
+			print("duplicate")
+		elif Input.is_action_just_pressed("ui_text_delete"):
+			queue_free()
 
 
 func _on_line_edit_text_submitted(new_text: String) -> void:
 	if new_text == "":
 		queue_free()
+	else:
+		lineEdit.release_focus()

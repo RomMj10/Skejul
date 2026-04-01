@@ -9,6 +9,6 @@ var color_group = {
 
 var icon_group = {
 	0: "res://assets/Monitor.png",
-	1: "",
+	1: "res://assets/X circle.png",
 	2: "res://assets/Book.png"
 }

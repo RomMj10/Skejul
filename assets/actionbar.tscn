@@ -4,6 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://conbjs6lo51p4" path="res://assets/add.png" id="2_ethhl"]
 [ext_resource type="StyleBox" uid="uid://djhh4o4rdrq7y" path="res://assets/button_accent2_hover.tres" id="2_mi7tt"]
 [ext_resource type="Texture2D" uid="uid://b8ndtk0a3ivso" path="res://assets/text.png" id="4_ethhl"]
+[ext_resource type="Texture2D" uid="uid://dt1pfyirrbm2p" path="res://assets/save.png" id="5_xcpgn"]
+[ext_resource type="Texture2D" uid="uid://dmqqqa4jqalnq" path="res://assets/load.png" id="6_3ffo0"]
+[ext_resource type="Texture2D" uid="uid://dpjqvtu84dsgx" path="res://assets/screenshot.png" id="6_hnssq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xcpgn"]
 bg_color = Color(0.12992108, 0.10155053, 0.10155053, 1)
@@ -25,7 +28,7 @@ mouse_filter = 1
 layout_mode = 0
 offset_left = 32.0
 offset_top = 24.0
-offset_right = 184.0
+offset_right = 376.0
 offset_bottom = 96.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_xcpgn")
 
@@ -74,4 +77,67 @@ offset_top = 16.0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("4_ethhl")
+expand_mode = 1
+
+[node name="Button3" type="Button" parent="Panel" unique_id=2066365275]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 144.0
+offset_top = -28.0
+offset_right = 200.0
+offset_bottom = 28.0
+grow_vertical = 2
+theme_override_styles/normal = ExtResource("1_tbs2v")
+
+[node name="rect" type="TextureRect" parent="Panel/Button3" unique_id=490046594]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_xcpgn")
+expand_mode = 1
+
+[node name="Button4" type="Button" parent="Panel" unique_id=54328625]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 208.0
+offset_top = -28.0
+offset_right = 264.0
+offset_bottom = 28.0
+grow_vertical = 2
+theme_override_styles/normal = ExtResource("1_tbs2v")
+
+[node name="rect" type="TextureRect" parent="Panel/Button4" unique_id=718128362]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("6_3ffo0")
+expand_mode = 1
+
+[node name="Button5" type="Button" parent="Panel" unique_id=2062793788]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 272.0
+offset_top = -28.0
+offset_right = 328.0
+offset_bottom = 28.0
+grow_vertical = 2
+theme_override_styles/normal = ExtResource("1_tbs2v")
+
+[node name="rect" type="TextureRect" parent="Panel/Button5" unique_id=1238489847]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("6_hnssq")
 expand_mode = 1
