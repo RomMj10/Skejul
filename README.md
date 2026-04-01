@@ -2,7 +2,6 @@
 
 Skejul is a modular scheduling application that allows user to create diagrams of their schedules with interchangeable features. Schedules can be saved and loaded using .essen files, and users can capture screenshots of their schedules.
 
-> This is an independent personal project and is not affiliated with, endorsed by, or associated with Nothing Technology Limited or any of its products in any way. All trademarks belong to their respective owners.
 
 ## Features
 
