@@ -1,6 +1,6 @@
 # Skejul
 
-Skejul is a modular scheduling application that allows user to create diagrams of their schedules with interchangeable features. Schedules can be saved and loaded using .essen files, and users can capture screenshots of their schedules.
+Skejul is a scheduling application that allows user to create diagrams of their schedules with blocks and interchangeable features. Schedules can be saved and loaded using .essen files, and users can capture screenshots of their schedules.
 
 
 ## Features
