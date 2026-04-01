@@ -18,3 +18,25 @@ To use Skejul, simply run the application and begin creating your schedule by ad
 ## File Format
 
 Skejul uses the .essen file format for saving and loading schedules. This format preserves all schedule elements including positions, text content, and block configurations.
+
+## Technology Stack
+
+- **Engine**: Godot 4.x
+- **Language**: GDScript
+- **File Format**: Custom .essen format for schedule persistence
+- **Assets**: Custom fonts, icons, and UI elements
+
+## Project Structure
+
+- `script/` - Contains all GDScript components (main, save/load, screenshot, UI elements)
+- `prefabs/` - Reusable scenes (draggable blocks, text blocks, main interface)
+- `assets/` - Fonts, icons, images, and other resources
+- `test/` - Compiled executables for Windows platform
+
+## Usage Tips
+
+1. Use the add button to create new schedule elements
+2. Drag blocks to rearrange your schedule layout
+3. Double-click text blocks to edit content
+4. Use save/load functions to persist your work
+5. Use screenshot function to export your schedule as an image
