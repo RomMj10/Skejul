@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://bgurfyt0k41f1"]
 
 [ext_resource type="Script" uid="uid://cfqrhrn7reqya" path="res://script/main.gd" id="1_4sl7s"]
-[ext_resource type="Texture2D" uid="uid://4i3guxye81cs" path="res://assets/button_accent1.tres" id="1_jflnv"]
-[ext_resource type="Texture2D" uid="uid://co6rkl35lj8w7" path="res://assets/essential_logo.png" id="2_4sl7s"]
 [ext_resource type="FontFile" uid="uid://coqvubablpf18" path="res://assets/NType82-Headline.otf" id="3_jflnv"]
 [ext_resource type="PackedScene" uid="uid://bfuws85lw1e2g" path="res://assets/actionbar.tscn" id="5_b26oi"]
 [ext_resource type="StyleBox" uid="uid://djhh4o4rdrq7y" path="res://assets/button_accent2_hover.tres" id="5_kfaqx"]
+[ext_resource type="Texture2D" uid="uid://ca554fcwqxf0t" path="res://assets/skejul_logo.png" id="6_c70ge"]
 [ext_resource type="FontFile" uid="uid://b3m5xkq4b8vhq" path="res://assets/BarCode39-Z7DZ.ttf" id="7_1dwcq"]
 
 [sub_resource type="Gradient" id="Gradient_o5gy4"]
@@ -809,23 +808,9 @@ offset_top = 16.0
 offset_right = 112.0
 offset_bottom = 88.0
 mouse_default_cursor_shape = 2
-texture_normal = ExtResource("1_jflnv")
+texture_normal = ExtResource("6_c70ge")
 ignore_texture_size = true
 stretch_mode = 0
-
-[node name="TextureRect" type="TextureRect" parent="overlay/header/menu_btn" unique_id=821635655]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 16.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = -16.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_4sl7s")
-expand_mode = 1
 
 [node name="screenshot_overlay" type="Panel" parent="overlay" unique_id=1628686915]
 modulate = Color(1, 1, 1, 0)

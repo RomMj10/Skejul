@@ -17,8 +17,8 @@ boot_splash/bg_color=Color(0.11440414, 0.10298062, 0.09829799, 1)
 boot_splash/show_image=false
 boot_splash/stretch_mode=2
 boot_splash/use_filter=false
-boot_splash/image="uid://k6wpv83w7eip"
-config/icon="uid://k6wpv83w7eip"
+boot_splash/image="uid://ca554fcwqxf0t"
+config/icon="uid://ca554fcwqxf0t"
 
 [autoload]
 
