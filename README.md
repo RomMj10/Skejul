@@ -37,6 +37,6 @@ Skejul uses the .essen file format for saving and loading schedules. This format
 
 1. Use the add button to create new schedule elements
 2. Drag blocks to rearrange your schedule layout
-3. Double-click text blocks to edit content
+3. Right-click text blocks to edit content
 4. Use save/load functions to persist your work
 5. Use screenshot function to export your schedule as an image
