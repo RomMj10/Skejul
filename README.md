@@ -1,4 +1,10 @@
+
+<img width="128" height="128" alt="skejul_logo" src="https://github.com/user-attachments/assets/ff4e2bce-b408-4728-b6f8-b500adf7c654" />
+
 # Skejul
+
+
+
 
 Skejul is a scheduling application that allows user to create diagrams of their schedules with blocks and interchangeable features. Schedules can be saved and loaded using .essen files, and users can capture screenshots of their schedules.
 
